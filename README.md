@@ -63,7 +63,7 @@ you want to copy the contents of that file, make sure you dont inlcude any white
 - Open your GitBash and we are going to start the SSH authentication agent. This will allow you to add the key once and use them for multiple SSH connections. 
 
 ```
-eval `ssh-agent-s`
+eval `ssh-agent -s`
 ```
 - Then we can add the SSH private key to the SSH agent
 

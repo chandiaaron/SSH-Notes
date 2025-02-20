@@ -23,6 +23,24 @@ An SSH key pair consists of a private and public key that work together for secu
 | **Common Use Cases** | Server management, secure shell access, tunneling | Secure website access, online transactions |
 
 
-## Creating an SSH Key Pair
+## Creating an SSH Key Pair(for the first time)
+
+- First you need to open GitBash and make a directroy on your computer called " .ssh ". we can check if this worked by running the list command, you should see your file.
+```
+mkdir .ssh
+ls -a
+```
+
+- we need to make sure we are working that directory. 
+```
+cd .ssh
+```
+
+- next we need to generate our keys.
+```
+ssh-keygen -t rsa -b 4096 -C "Your Email" 
+```
+
+you will be prompted to create a file name, for example: 
 
 ## Adding the SSH Key pair to GitHub 
